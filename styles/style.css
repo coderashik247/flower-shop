@@ -4,13 +4,14 @@ body {
     font-family: "Lato", sans-serif;
 }
 
-header {
+header, .sale-section-container {
     background-color: #E554731A;
 }
 
 /* Shared CSS style here */
 .banner-section,
-.featured-section {
+.featured-section,
+.sale-section {
     width: 80%;
     margin: 0 auto;
 }
@@ -40,7 +41,7 @@ header {
     width: 80%;
 }
 
-.banner-description>button {
+.banner-description>button, .sale-content>button {
     border: none;
     padding: 20px 43px;
     border-radius: 8px;
@@ -164,6 +165,54 @@ img {
     width: 100%;
 }
 
+/* Sale Section styles here */
+.sale-section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0 ;
+    margin: 100px auto;
+}
+.sale-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.sale-content>h2{
+    font-family: Lato;
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+span{
+    color: rgb(234, 63, 100);
+}
+.sale-content>p{
+    width: 70%;
+    margin: 0 auto;
+    color: rgba(39, 39, 39, 0.6);
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-bottom: 32px;
+}
+.sale-image{
+    width: 45%;
+    height: 85%;
+    margin: 0 auto;
+}
+
+.sale-image>img{
+    height: 100%;
+    width: 100%;
+    border: 1px dashed lightgray;
+}
+
 
 
 
@@ -188,9 +237,13 @@ img {
         text-align: justify;
     }
 
-    .featured-container, .card-container {
+    .featured-container, .card-container, .sale-section {
         grid-template-columns: repeat(1, 1fr);
     }
+    .sale-image{
+    width: 100%;
+    height: 100%;
+}
     
 }
 
