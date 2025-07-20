@@ -125,6 +125,46 @@ img {
     height: 430px;
 }
 
+/* Card Section styles here */
+.card-container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: rgba(39, 39, 39, 0.05);
+    padding-top:30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-around;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card>h2 {
+    color: rgba(39, 39, 39, 0.8);
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 35px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.card-image {
+    height: 35%;
+    width: 25%;
+    border: 1px dashed lightgray;
+}
+
+.card-image>img {
+    height: 100%;
+    width: 100%;
+}
+
+
 
 
 
@@ -148,9 +188,10 @@ img {
         text-align: justify;
     }
 
-    .featured-container {
+    .featured-container, .card-container {
         grid-template-columns: repeat(1, 1fr);
     }
+    
 }
 
 
